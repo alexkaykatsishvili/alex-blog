@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alex blog</title>
-  </head>
-  <body>
-  	<header>
-  		<h1>Alex's blog</h1>
-  		<nav>
-  			<ul>
-  				<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-  				<li><a href="{{site.baseurl}}/news.html">News</a></li>
-  			</ul>
-  		</nav>
-  	</header>
-	{{content}}
-  </body>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
+</head>
+
+<body>
+    <header>
+        <h1>Alex's blog</h1>
+        {% include nav.html %}
+    </header>
+    {{content}}
+    <footer>All rights reserved</footer>
+</body>
+
 </html>
