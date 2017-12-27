@@ -5,3 +5,6 @@ html {
 .current {
 	background-color: #ccc;
 }
+.nav-top {
+	font-size: 18px;
+}

@@ -12,10 +12,13 @@
 <body>
     <header>
         <h1>Alex's blog</h1>
-        {% include nav.html %}
+        {% include nav.html navclass="nav-top" %}
     </header>
     {{content}}
-    <footer>All rights reserved</footer>
+    <footer>
+        {% include nav.html navclass="nav-bottom" %}
+        <p>All rights reserved</p>
+    </footer>
 </body>
 
 </html>
